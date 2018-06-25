@@ -15,11 +15,6 @@ public class Service1Application {
 		SpringApplication.run(Service1Application.class, args);
 	}
 
-	@GetMapping("/actuator/health")
-	public String health() {
-		return "ok";
-	}
-
 	@GetMapping("/index")
 	public String index() {
 		return "service1";
